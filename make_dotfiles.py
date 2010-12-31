@@ -1,9 +1,5 @@
 # Python script to intelligently link dotfiles to this directory
 
-from glob import glob
-from sys import path,argv
-from os.path import join,splitext,expanduser
-
 def Ask(text, default):
     """Queries the user with text, with default value set to true/false."""
     if type(default) != bool: raise TypeError("no appropriate default value provided.")
@@ -50,6 +46,10 @@ def LinkFiles(origin, dest, exclude = [], dot = False):
             LinkFiles(tmp_orig, tmp_dest)
 
 if __name__ == '__main__':
+    from glob import glob
+    from sys import path,argv
+    from os.path import join,splitext,expanduser
+
     origin = path[0]
     dest = expanduser('~')
     exclude = glob(join(path[0], "{0}.*".format(splitext(argv[0])[0])))
