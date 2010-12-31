@@ -1,0 +1,13 @@
+field birthday = Birthday, date
+field groups = Groups, list
+
+view MAIN = name, email, mobile, phone, nick
+view ADDRESS = address, address2, city, state, zip, country
+view PHONE = phone, workphone, mobile, fax
+view OTHER = url, groups, notes, birthday, anniversary
+
+set show_all_emails = false
+set add_email_prevent_duplicates = true
+set sort_field = name
+
+set index_format="{name:21} {email:40} {mobile:17|phone|workphone} {groups:21}"
