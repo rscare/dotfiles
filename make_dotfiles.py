@@ -47,9 +47,9 @@ def LinkFiles(origin, dest, exclude = [], dot = False):
 if __name__ == '__main__':
     from glob import glob
     from sys import path,argv
-    from os.path import join,splitext,expanduser
+    from os.path import join,splitext,expanduser,basename
 
     origin = path[0]
     dest = expanduser('~')
-    exclude = glob(join(path[0], "{0}.*".format(splitext(argv[0])[0])))
+    exclude = glob(join(path[0], "{0}.*".format(splitext(basename(argv[0]))[0])))
     LinkFiles(origin = origin, dest = dest, exclude = exclude, dot = True)
