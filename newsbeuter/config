@@ -1,0 +1,17 @@
+# General Settings
+refresh-on-startup no
+browser "links -g %u"
+macro i set browser "feh %u"; open ; set browser "links -g %u"
+
+# Key bindigs
+bind-key j down
+bind-key k up
+
+# Colors
+color info white black bold
+color listfocus red black bold
+
+# Google reader
+urls-source "googlereader"
+googlereader-login "`rpass --batch --users 'Primary Gmail'`"
+googlereader-password "`rpass --batch --passwords 'Primary Gmail'`"
