@@ -15,7 +15,7 @@ def Ask(text, default):
 
 def LinkFiles(origin, dest, exclude = [], dot = False):
     """Links files from origin to destination."""
-    from os.path import isfile,isdir,join
+    from os.path import isfile,isdir,join,islink
     from os.path import split as path_split
     from os import mkdir,unlink,symlink
     from glob import glob
@@ -33,10 +33,9 @@ def LinkFiles(origin, dest, exclude = [], dot = False):
         # For files
         if isfile(tmp_orig):
             if isfile(tmp_dest):
-                if Ask("File {0} exists...link anyway? [N/y] ".format(tmp_dest), default = False):
-                    unlink(tmp_dest)
-                else:
+                if not(islink(tmp_dest)) and not(Ask("File {0} exists...link anyway? [N/y] ".format(tmp_dest), default = False)):
                     continue
+                else: unlink(tmp_dest)
             symlink(tmp_orig, tmp_dest)
 
         # For directories, create the directory tree in case some file is needed in there
