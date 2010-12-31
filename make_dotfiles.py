@@ -4,10 +4,13 @@ def Ask(text, default):
     """Queries the user with text, with default value set to true/false."""
     if type(default) != bool: raise TypeError("no appropriate default value provided.")
 
-    response = input(text)
-
     def_rep = ('n', 'y')
-    if default == True: def_rep = ('y', 'n')
+    if default == True:
+        def_rep = ('y', 'n')
+        text = "{0} [Y/n] ".format(text)
+    else: text = "{0} [N/y] ".format(text)
+
+    response = input(text)
 
     if response == '' or response.lower()[0] == def_rep[0]: return default
     elif response.lower()[0] == def_rep[1]: return not(default)
@@ -33,7 +36,7 @@ def LinkFiles(origin, dest, exclude = [], dot = False):
         # For files
         if isfile(tmp_orig):
             if isfile(tmp_dest):
-                if islink(tmp_dest) or Ask("File {0} exists...link anyway? [N/y] ".format(tmp_dest), default = False):
+                if islink(tmp_dest) or Ask("File {0} exists...link anyway?".format(tmp_dest), default = False):
                     unlink(tmp_dest)
                 else: continue
             symlink(tmp_orig, tmp_dest)
