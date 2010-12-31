@@ -1,0 +1,3 @@
+text/html; elinks -force-html %s; needsterminal
+application/pdf; zathura %s
+image/*; feh %s

@@ -1,0 +1,46 @@
+urxvt.perl-ext-common: default,matcher
+urxvt.urlLauncher: gelinks
+urxvt.matcher.button: 1
+urxvt.scrollBar: 0
+
+!urxvt*font: xft:Monospace:pixelsize=11:antialias=true:hinting=true
+!urxvt*boldFont: xft:Monospace:bold:pixelsize=11:antialias=true:hinting=true
+!urxvt*font: -xos4-terminus-medium-r-*-*-12-*-*-*-*-*-*-*
+!urxvt*boldFont: -xos4-terminus-bold-r-*-*-12-*-*-*-*-*-*-*
+!urxvt*font: xft:ubuntu:pixelsize=13:antialias=true:autohinting=true
+!urxvt*boldFont: xft:ubuntu:bold:pixelsize=13:antialias=true:autohinting=true
+!urxvt*font: xft:Envy Code R:pixelsize=13:antialias=true:hinting=true
+!urxvt*boldFont: xft:Envy Code R:bold:pixelsize=13:antialias=true:hinting=true
+!urxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=11:antialias=true:hinting=true
+!urxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=11:antialias=true:hinting=true
+urxvt*font: xft:Dina:pixelsize=7:autohint=true
+urxvt*boldFont: xft:Dina:bold:pixelsize=7:autohint=true
+
+urxvt.urgentOnBell: true
+
+! urxvt backgroud/foreground
+urxvt*foreground: #BBBBBB
+urxvt*background: #262626
+urxvt*cursorColor: #888888
+
+! transparency settings
+urxvt*transparent:  true
+urxvt*shading:      4
+
+! General colors
+*color0:     rgb:33/33/33
+*color1:     rgb:EE/00/00
+*color2:     rgb:76/EE/00
+*color3:     rgb:EE/EE/00
+*color4:     rgb:63/B8/FF
+*color5:     rgb:9a/70/b2
+*color6:     rgb:00/EE/EE
+*color7:     rgb:FF/FF/FF
+*color8:     rgb:44/44/44
+*color9:     rgb:FF/00/00
+*color10:    rgb:7F/FF/00
+*color11:    rgb:FF/FF/00
+*color12:    rgb:1b/85/d6
+*color13:    rgb:ad/73/ba
+*color14:    rgb:00/EE/EE
+*color15:    rgb:f4/f4/f4

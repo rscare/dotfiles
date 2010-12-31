@@ -1,0 +1,8 @@
+[user]
+	email = yuri.lenskiy@gmail.com
+	name = Yuri D. Lenskiy
+[core]
+	editor = vim
+	autocrlf = input
+[merge]
+	tool = vimdiff
