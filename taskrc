@@ -33,6 +33,6 @@ report.list.columns=id,project,priority,due,description
 
 report.list.labels=ID,Project,Pri,Due,Description
 
-report.list.sort=due-,priority-,project+
+report.list.sort=due+,priority-,project+
 
 default.command=list project.hasnt:someday
