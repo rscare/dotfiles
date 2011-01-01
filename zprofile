@@ -1,7 +1,7 @@
 source ~/.zshrc
 export PATH=/home/redscare/bin:/usr/local/bin:$PATH
 export EDITOR=vim
-export PROMPT="┌─── %B%*%b ─ %F{red}ᒥ|ᒣ%f
+export PROMPT="┌─── %B%*%b ─ %F{red}ᒥ|ᒣ%f ─ %F{red}%m%f
 %{%}└┤ %B%F{red}%~%f%b "
 
 if [ ! $(pgrep slim) ]; then
