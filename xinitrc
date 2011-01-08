@@ -11,7 +11,7 @@ eval $(gpg-agent --daemon --enable-ssh-support --write-env-file)
 ( rpass -l && sync ) &
 (sleep 1; ~/bin/conkystatus) &
 (
-    sleep 3 
+    sleep 4 
     [ ! -f /tmp/sysonline ] && online 
     source /tmp/sysonline
     [ $SYS_ONLINE = 1 ] && ~/bin/news_scroller
