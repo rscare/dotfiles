@@ -1,5 +1,13 @@
 set nocompatible
 
+" If we have a .dotfiles directory, use that instead of the directory under
+" $HOME
+let s:dotfiles_vim = $HOME."/.dotfiles/vim"
+if isdirectory(s:dotfiles_vim)
+    let s:home_vim_patt = ",\\?".$HOME."/\\.vim[^,]*,\\?"
+    let &runtimepath=s:dotfiles_vim.",".substitute(&runtimepath, s:home_vim_patt, "", "g").",".s:dotfiles_vim."/after"
+endif
+
 filetype off
 call pathogen#runtime_append_all_bundles()
 
