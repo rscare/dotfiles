@@ -20,7 +20,7 @@ def LinkFiles(origin, dest, exclude = [], dot = False):
     """Links files from origin to destination."""
     from os.path import isfile,isdir,join,islink
     from os.path import split as path_split
-    from os import mkdir,unlink,symlink
+    from os import mkdir,unlink,symlink,readlink
     from glob import glob
 
     for f in glob(join(origin, '*')):
@@ -36,9 +36,10 @@ def LinkFiles(origin, dest, exclude = [], dot = False):
         # For files
         if isfile(tmp_orig):
             if isfile(tmp_dest):
-                if islink(tmp_dest) or Ask("File {0} exists...link anyway?".format(tmp_dest), default = False):
+                if not(islink(tmp_dest) and readlink(tmp_dest) == tmp_orig) and Ask("File {0} exists...link anyway?".format(tmp_dest), default = False):
                     unlink(tmp_dest)
-                else: continue
+                else: 
+                    continue
             symlink(tmp_orig, tmp_dest)
 
         # For directories, create the directory tree in case some file is needed in there
@@ -54,5 +55,5 @@ if __name__ == '__main__':
 
     origin = path[0]
     dest = expanduser('~')
-    exclude = glob(join(path[0], "{0}.*".format(splitext(basename(argv[0]))[0])))
+    exclude = glob(join(origin, "{0}.*".format(splitext(basename(argv[0]))[0])))
     LinkFiles(origin = origin, dest = dest, exclude = exclude, dot = True)
