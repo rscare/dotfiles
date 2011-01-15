@@ -6,7 +6,7 @@ feh --bg-center ~/images/wallpaper/personal/perlogo.png
 # gpg-agent and syncing stuff
 
 kill $(pgrep -u $UID gpg-agent)
-eval $(gpg-agent --daemon --enable-ssh-support --write-env-file)
+eval $(gpg-agent --daemon --enable-ssh-support --write-env-file --default-cache-ttl 2100)
 
 ( rpass -l && sync ) &
 (sleep 1; ~/bin/conkystatus) &
