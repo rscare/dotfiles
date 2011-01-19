@@ -7,8 +7,7 @@ TEXT
   ^i(/home/redscare/images/xbm8x8/cpu.xbm) ${cpu}%\
   ^i(/home/redscare/images/xbm8x8/mem.xbm) ${memperc}%\
   ^i(/home/redscare/images/xbm8x8/fs_02.xbm) ${fs_free_perc /home/}%\
-  ^i(/home/redscare/images/xbm8x8/mail.xbm) ${if_existing /tmp/sysonline}${execi 120 gmailnotifier}${else}\
-${new_mails /home/redscare/mail/inbox/}${endif}\
-${if_up wlan0}  ${if_existing /tmp/sysonline}^fg(blue)${else}^fg(red)${endif}^i(/home/redscare/images/xbm8x8/wifi_01.xbm)^fg()${endif}\
-${if_up eth0}  ${if_existing /tmp/sysonline}^fg(blue)${else}^fg(red)${endif}^i(/home/redscare/images/xbm8x8/net_wired.xbm)${endif}\
+  ^i(/home/redscare/images/xbm8x8/mail.xbm) ${execi 60 gmailnotifier}\
+${if_up wlan0}  ^fg(blue)^i(/home/redscare/images/xbm8x8/wifi_01.xbm)^fg()${endif}\
+${if_up eth0}  ^fg(blue)^i(/home/redscare/images/xbm8x8/net_wired.xbm)^fg()${endif}\
   ^i(/home/redscare/images/xbm8x8/clock.xbm) ${time %a %d %B %H:%M}
