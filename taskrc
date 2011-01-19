@@ -29,10 +29,10 @@ dateformat=d/m/Y
 
 dateformat.report=a D b Y
 
-report.list.columns=id,project,priority,due,description
+report.list.columns=id,project,priority,due,tags,description
 
-report.list.labels=ID,Project,Pri,Due,Description
+report.list.labels=ID,Project,Pri,Due,Tags,Description
 
-report.list.sort=due+,priority-,project+
+report.list.sort=due+,priority-,tags+,project+
 
 default.command=list project.hasnt:someday
