@@ -1,7 +1,7 @@
 # General Settings
 refresh-on-startup no
-browser "links -g %u"
-macro i set browser "feh %u"; open ; set browser "links -g %u"
+browser "xlinks -g %u &"
+macro i set browser "feh %u &"; open ; set browser "xlinks -g %u &"
 
 # Key bindigs
 bind-key j down
