@@ -1,0 +1,5 @@
+(require 'remember)
+(org-remember-insinuate)
+(setq org-directory "~/notes/")
+(setq org-default-notes-file (concat org-directory "/notes.org"))
+(define-key global-map "\C-cr" 'org-remember)

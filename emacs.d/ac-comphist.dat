@@ -1,0 +1,50 @@
+((("__analyze_title" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("~/.emacs.d/settings-ido.el" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("print" .
+   [2 0 0 0 0])
+  ("self" .
+   [3 0 0 0])
+  ("_titlemetrics" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("__get_capitalized_words" .
+   [0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("title" .
+   [1 0 0 0 0])
+  ("global-set-key" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("kbd" .
+   [3 0 0])
+  ("sr-speedbar" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("progn" .
+   [2 0 0 0 0])
+  ("setq" .
+   [1 0 0 0])
+  ("make-sparse-keymap" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("define-key" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("cw/python-mode-viper-modifier-map" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("python-backspace" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("viper-modify-major-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("python-mode" .
+   [0 0 0 0 0 0 0 0 0 0 1])
+  ("messages-buffer-max-lines" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add-hook" .
+   [1 0 0 0 0 0 1 0])
+  ("gnus-message" .
+   [0 0 0 0 0 0 0 0 0 0 0 1])
+  ("message" .
+   [1 0 0 0 0 0 0])
+  ("flyspell" .
+   [1 0 0 0 0 0 0 0])
+  ("lambda" .
+   [2 0 0 0 0 0])
+  ("flyspell-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1])))
