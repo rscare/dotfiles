@@ -22,3 +22,8 @@
 ;; Pydoc
 (add-hook 'python-mode-hook (lambda ()
                               (local-set-key (kbd "C-c h") 'python-pydoc)))
+
+;; Quick edit notes file
+(global-set-key (kbd "C-c n") '(lambda ()
+                                 "Edit the default notes file."
+                                 (interactive) (find-file "~/notes/main.org")))
