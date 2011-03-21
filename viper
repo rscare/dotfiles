@@ -12,3 +12,13 @@
 
 (setq-default viper-want-emacs-keys-in-insert t)
 (setq-default viper-want-emacs-keys-in-vi t)
+
+;; Fix the backspace key to be mode-specific
+(add-hook 'viper-insert-state-hook (lambda ()
+                                    (define-key viper-insert-basic-map (kbd "<backspace>") nil)))
+
+;; Universal argument everywhere
+(define-key viper-vi-global-user-map (kbd "C-u") 'universal-argument)
+
+;; Allow cutting in insert mode
+(define-key viper-insert-global-user-map (kbd "C-w") 'kill-region)
