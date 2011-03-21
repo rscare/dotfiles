@@ -23,5 +23,5 @@ compinit
 HISTFILE=~/.zhistfile
 HISTSIZE=77
 SAVEHIST=77
-bindkey -v
+bindkey -e
 # End of lines configured by zsh-newuser-install
