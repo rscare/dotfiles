@@ -1,5 +1,8 @@
 ;; AUCTeX mode setup
 
+(add-to-list 'load-path
+             "~/.emacs.d/plugins/auctex/site-lisp")
+
 (load "auctex.el" nil t t)
 (load "preview-latex.el" nil t t)
 
