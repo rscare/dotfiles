@@ -17,3 +17,10 @@
 (global-set-key (kbd "C-c n") '(lambda ()
                                  "Edit the default notes file."
                                  (interactive) (find-file "~/notes/main.org")))
+
+;; Delete matching parentheses
+(global-set-key (kbd "M-)") 'delete-pair)
+
+;; Enclosing regions in delimiters
+(global-set-key (kbd "M-[") 'insert-pair)
+(global-set-key (kbd "M-\"") 'insert-pair)
