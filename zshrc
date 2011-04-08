@@ -7,6 +7,7 @@ alias :q='exit'
 alias startx='exec startx'
 alias pandora='mkfifo ~/.config/pianobar/ctl; pianobar; rm ~/.config/pianobar/ctl'
 
+# Allow personal program to run
 disable suspend
 
 # The following lines were added by compinstall
