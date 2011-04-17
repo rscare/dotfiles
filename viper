@@ -22,3 +22,6 @@
 
 ;; Allow cutting in insert mode
 (define-key viper-insert-global-user-map (kbd "C-w") 'kill-region)
+
+;; Fix the binding of C-c / for org-mode
+(define-key viper-vi-basic-map "\C-c/" nil)
