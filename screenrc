@@ -1,0 +1,12 @@
+# Set default screen character to C-T (unused)
+escape ""
+
+# fix colors
+term screen-256color
+
+# disable startup message
+startup_message off
+
+# Startup programs
+screen -t emacs emacs -nw
+screen -t term
