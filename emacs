@@ -13,6 +13,7 @@
 (load "settings-indent")
 (load "settings-viper")
 (load "settings-yasnippets")
+(load "settings-erc")
 
 (load "settings-org")
 (load "settings-remember")
