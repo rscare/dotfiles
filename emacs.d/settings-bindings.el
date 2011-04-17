@@ -24,3 +24,8 @@
 ;; Enclosing regions in delimiters
 (global-set-key (kbd "M-[") 'insert-pair)
 (global-set-key (kbd "M-\"") 'insert-pair)
+
+;; Launch a terminal
+(global-set-key (kbd "M-S-<return>") (lambda ()
+                                       "Launch a default terminal session."
+                                       (interactive) (ansi-term (getenv "SHELL"))))
