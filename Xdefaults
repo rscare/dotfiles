@@ -13,8 +13,10 @@ urxvt.scrollBar: 0
 !urxvt*boldFont: xft:Envy Code R:bold:pixelsize=13:antialias=true:hinting=true
 !urxvt*font: xft:Bitstream Vera Sans Mono:pixelsize=11:antialias=true:hinting=true
 !urxvt*boldFont: xft:Bitstream Vera Sans Mono:bold:pixelsize=11:antialias=true:hinting=true
-urxvt*font: xft:Dina:pixelsize=7:autohint=true
-urxvt*boldFont: xft:Dina:bold:pixelsize=7:autohint=true
+!urxvt*font: xft:Dina:pixelsize=7:autohint=true
+!urxvt*boldFont: xft:Dina:bold:pixelsize=7:autohint=true
+urxvt*font: xft:DejaVu Sans Mono:pixelsize=13:antialias=true
+urxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=13:antialias=true
 
 urxvt.urgentOnBell: true
 
