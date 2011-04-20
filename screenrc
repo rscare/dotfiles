@@ -7,6 +7,12 @@ term screen-256color
 # disable startup message
 startup_message off
 
+# Show statusbar
+hardstatus alwayslastline "%{+d .}%-w%{-d .}%{wR}%n %t%{-b dd}%{+d .}%+w"
+
 # Startup programs
 screen -t emacs emacs -nw
 screen -t term
+
+# Bindings
+bind m screen -t mail mutt
