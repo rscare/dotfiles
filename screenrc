@@ -7,6 +7,9 @@ term screen-256color
 # disable startup message
 startup_message off
 
+# allow proper function of esc-key
+maptimeout 0
+
 # Show statusbar
 hardstatus alwayslastline "%{+d .}%-w%{-d .}%{wR}%n %t%{-b dd}%{+d .}%+w"
 

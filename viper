@@ -13,6 +13,9 @@
 (setq-default viper-want-emacs-keys-in-insert t)
 (setq-default viper-want-emacs-keys-in-vi t)
 
+;; Fix delay in ESC-key in tty
+(defun viper-ESC-keyseq-timeout () 0)
+
 ;; Fix the backspace key to be mode-specific
 (define-key viper-insert-basic-map (kbd "DEL") 'nil)
 (add-hook 'viper-insert-state-hook '(lambda () (define-key viper-insert-basic-map [backspace] nil)))
