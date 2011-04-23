@@ -1,4 +1,4 @@
-urxvt.perl-ext-common: default,matcher
+urxvt.perl-ext-common: default,matcher,-searchable-scrollback,-option-popup,-selection-popup
 urxvt.urlLauncher: gelinks
 urxvt.matcher.button: 1
 urxvt.scrollBar: 0
