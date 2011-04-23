@@ -19,7 +19,7 @@ eval $(gpg-agent --daemon --enable-ssh-support --write-env-file --default-cache-
 ) &
 
 # Starting useful programs
-urxvt -e "screen" &
+urxvt -e "screen -D -R" &
 
 exec dwm
 
